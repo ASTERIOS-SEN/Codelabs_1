@@ -41,10 +41,12 @@ class Rectagle {
 String sream(int length) => 'A' * length;
 void main(List<String> arguments) {
   /** Class Bicycle **/
+  print('Class Bicycle');
   var bike = Bicycle(9, 2);
   print(bike);
-
+  print('');
   /** Class Rectagule**/
+  print('Class Rectagule');
   Rectagle rectalgule1 =
       Rectagle(origin: const Point(10, 20), width: 100, height: 200);
   Rectagle rectalgule2 = Rectagle(origin: const Point(10, 10));
@@ -55,17 +57,22 @@ void main(List<String> arguments) {
   print(rectalgule2);
   print(rectalgule3);
   print(rectalgule4);
+  print('');
 
   /**Class Shape**/
+  print('Class Shape');
   final circle = Circle(2);
   final square = Square(2);
-  print('');
   print(square.area);
+  print('');
 
   final circle2 = shapeFactory('circle');
   print('Funcion de nivel superior: ${circle2.area}');
 
   /** Programacion funcional**/
+  print('');
+  print('Programacion funcional');
   final values = [1, 2, 3, 5, 10, 50];
   values.skip(3).take(3).forEach(print);
+
 }

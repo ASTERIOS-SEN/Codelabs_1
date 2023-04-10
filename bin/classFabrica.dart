@@ -1,5 +1,6 @@
 import 'dart:math';
 
+// Clase creada desde esta archivo para ser llamada el package principal.
 abstract class Shape {
   num get area;
 }
